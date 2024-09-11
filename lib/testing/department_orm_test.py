@@ -212,9 +212,9 @@ class TestDepartment:
         Employee.all = {}
 
         Department.create_table()
-        department1 = Department.create("Payroll", "Building A, 5th Floor")
+        department1 = Department.create("Payroll", "Building A", "5th Floor")
         department2 = Department.create(
-            "Human Resources", "Building C, 2nd Floor")
+            "Human Resources", "Building C", "2nd Floor")
 
         Employee.create_table()
         employee1 = Employee.create("Raha", "Accountant", department1.id)
